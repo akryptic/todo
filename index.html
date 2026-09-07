@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watchlist</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p>Github Practice Project</p>
+      <h1>Movie Watchlist</h1>
+      <h3>
+        Practice CRUD, DOM manipulation and the Github Pull Request Workflow
+      </h3>
+
+      <div id="movie-form">
+        <h2>Add Movie</h2>
+        <form>
+          <div class="field">
+            <label for="title">Movie Title</label>
+            <div class="inp-wrapper">
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Champaklaal Ki Duniya"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="genre">Genre</label>
+            <div class="inp-wrapper">
+              <input
+                type="text"
+                id="genre"
+                name="genre"
+                placeholder="Action, Horror, etc."
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="year">Release Year</label>
+            <div class="inp-wrapper">
+              <input
+                type="number"
+                id="year"
+                name="year"
+                placeholder="YYYY"
+                min="1900"
+                max="2099"
+                step="1"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="status">Status</label>
+            <div class="inp-wrapper">
+              <select name="Status" id="status">
+                <option value="planned">Planned</option>
+                <option value="watched">Watched</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button type="submit" id="btn-add">Add</button>
+            <button type="reset" id="cancel">Reset Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
